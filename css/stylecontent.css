@@ -2,7 +2,7 @@ body{
 	
 	background: rgb(18, 112, 112);
 
-	width: 1080px;
+	width: 500px;
 	height:1920px ;
 }
 h2 {
@@ -58,7 +58,7 @@ h2 {
 
 img {
 	display: block;
-	width: 800px;
+	width: 700px;
 	margin: 50px 100px;
 	height: 648px;
 	border-radius: 20px;
@@ -82,7 +82,7 @@ img {
 
 .text {
 	display: block;
-	width: 800px;
+	width: 700px;
 	height: 250px;
 	text-align: justify;
 	margin-bottom: 20px;
