@@ -9,36 +9,72 @@
 	<title>Document</title>
 </head>
 <body>
-    <header>
-		<h1 class="title-link"><a href="index.html" >головна</a></h1>
-    <h1 class="title-link"><a href="breakfast.html" >десерти</a></h1>
-   
-</header>
-<main>
-	<div class="content">
-		<h2 class="title">цукерки трюфель</h2>
-		<img src="img/truffle.jpg" alt="цукерки трюфель">
-        
-<div class="container-text">
-    
-        <p class="text">   
-			Всі інгредієнти перебити в блендері, 
-			сформолювати в кульки та обакатати в какао. Прибрати в ходлодильник на 20 хв.
-        </p>
-
-
-
-		<div class="ingredients">
-            <ul>
-					<li >фініки</li>
-        <li >родзинки</li>
-        <li >горіхи</li>
-        <li >какао (2ч.л.)</li>
-					</ul>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">Трюфель</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="../html/index.html">головна сторінка></a>
+          <a href="../html/desserts.html">десерти</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img src="../img/truffle.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="../img/yzyum.jpeg" alt="" >
+            </div>
+            <div class="sliderbig__item filter" alt="">
+              <img src="../img/nutss.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="../img/Kakao3.jpeg"alt="">
+            </div>
         </div>
-	</div>
-</div>
-   
-    </main>
-    <footer></footer>
-</body>
+
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image"  src="../img/truffle.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="../img/yzyum.jpeg" alt="">
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="../img/finik.jpeg"alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="../img/Kakao3.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox"> 
+          <li><img class="icon" src="../img/checkbox.svg" alt="">родзинки (200 г.)</li>
+          <li><img class="icon" src="../img/checkbox.svg" alt="">фініки (250 г.)</li>  
+          <li><img class="icon" src="../img/checkbox.svg" alt="">арахіс (100 г.)</li>
+          <li><img class="icon" src="../img/checkbox.svg" alt="">какао</li>
+        </ul>
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Всі інгредієнти добре промити, віджати воду та перебити в блендері. 
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            З отриманої маси сформувати в кульки та обакатати їх в какао.        
+          </p>
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            Прибрати в ходлодильник на 20 хв.
+          </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="../js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="../js/script.js"></script>
+		</div>
+	</body>
+</html>
