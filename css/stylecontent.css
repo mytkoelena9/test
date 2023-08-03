@@ -44,7 +44,7 @@ html,body{
 /*------------------------------------------------------------------ Великий слайдер-------------------------------------------------- */
 .sliderbig{
 	position: relative;
-	width: 300px;
+	width: 350px;
 	height: 220px;
 	text-align: center;
 	margin: 0 auto;
@@ -130,8 +130,8 @@ html,body{
 }
 .slider .slick-dots button{
 	font-size: 0;
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 	background-color: #fff;
 	border-radius: 50%;
 }
@@ -146,6 +146,7 @@ html,body{
 	font-family: "Lato";
 	font-size: 12px;
 	padding-bottom: 10px;
+	display: none;
 	
 }
 
@@ -167,7 +168,7 @@ a:hover {
  }
  .content__checkbox {
 	padding: 20px;
-	font-size: 22px;
+	font-size: 16px;
 }
 .icon{
 	height: 22px;
