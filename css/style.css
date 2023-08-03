@@ -1,102 +1,374 @@
-/*-----------------------------------------------body----------------------------------------------------------*/ 
 
-
-body{
-width: 700px;
-height:1920px ;
-font-family:'Courier New', Courier, monospace;
-text-align: center;
-font-size: 20px;
-
-background: rgb(18, 112, 112);
-color: rgb(18, 112, 112);}
-
-/*-----------------------------------------------title-block (1 block)----------------------------------------------*/ 
-h1{font-size: 60px;
-	font-family:'Courier New', Courier, monospace;}
-h2{font-size: 40px;
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/Comforter-Regular.woff2") format("woff2"), url("../fonts/Comforter-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
 	
-	font-family:'Courier New', Courier, monospace;}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato-v23-latin-regular.woff2") format("woff2"), url("../fonts/lato-v23-latin-regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+	background-color: #0a0a0a82;
+}
+html,body{
+	font-family: "Lato";
+	line-height: 20px;
+	background-color: rgb(180, 207, 207);
+	margin: 0 auto;
+}
+
+.wrapper{
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 10px;
+	font-family: "Lato";
+	line-height: 20px;
+	background-color: rgb(18, 112, 112);
+	box-shadow: 6px 6px 2px 1px rgb(22, 22, 22);
+}
+
+.sliderbox{
+	min-width: 360px;
+ }
+
+/* Основні стилі */
+.slick-slider{
+	min-width: 0;
+}
+
+/*------------------------------------------------------------------ Великий слайдер-------------------------------------------------- */
+.sliderbig{
+	position: relative;
+	width: 300px;
+	height: 220px;
+	text-align: center;
+	margin: 0 auto;
+	align-items: center;
+}
 
 
-.title,
-.title-link,
-.breakfast-title,
-.desserts-title,
-.maindishes-title{
+/* Обмежуючий контейнер */
+.slick-list{
+	overflow: hidden;
+}
+/* Стрічка слайдів */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+	text-align: center;
+	margin: 0 auto;
+	align-items: center;
+}
+/* Слайд */
+.sliderbig__item img{
+	width: 280px;
+	height: 200px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 auto;
+	align-items: center;
+}
+
+/*------------------------------------------------------------------ Превʼю слайдер-------------------------------------------------- */
+
+.slider{
+	position: relative;
+	width: 360px;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0px  20px ;
+}
+
+/* Слайд */
+.slider__item img{
+	width: 105px;
+	height: 80px;
+	cursor: pointer;
+	border-radius: 10px;
+	padding-left: 5px;
+
+}
+/* Стрілки слайдера*/
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -20px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 10px;
+	height: 30px;
+	opacity: 0.5;
+}
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url('../img/icons/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('../img/icons/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+/* Крапки */
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 3px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 6px;
+	height: 6px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+/*------------------------------------------------------------------- Текст-контент-------------------------------------------------- */
+.page__bread-crumbs {
+	font-family: "Lato";
+	font-size: 12px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
+a:hover {
+	color: rgba(236, 245, 241, 0.745);
+	transition: 0.6s;
+}
+.page__name-of-dish {
+	font-family: "CircularStd";
+	font-size: 50px;
+	line-height: 60px;
+	padding: 30px 0px 0px 0px;
+	text-align: center;
+}
+ .content {
+	font-size: 18px;
+	line-height: 20px;
+	max-width: 600px;
+ }
+ .content__checkbox {
+	padding: 20px;
+	font-size: 16px;
+}
+.icon{
+	height: 10px;
+	padding-right: 10px;
+	line-height: 10px;
+	vertical-align:baseline;
+	cursor: pointer;
+}
+
+.step{
+	font-family: "CircularStd";
+	font-size: 30px;
+	color: #ffffffa1;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+.content__text {
+	margin-bottom: 14px;
+	font-size: 16px;
+	padding-left: 10px;
+}
+.tooltip {
+	position: relative;
+	display: none;
+	cursor: help;
+  }
+  
+  /* Текст підказки */
+  .tooltip .tooltiptext {
+	width: 150px;
+	font-size: 11px;
+	line-height: 15px;
+	padding: 5px;
+	border-radius: 6px;
+	right: 10px;
+	bottom:30px;
+	text-align: center;
+	visibility: hidden;
+	position: absolute;
+	color: #0d0c0c;
+	background-color: rgb(255, 255, 255);
+	z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
+
+  .tooltipicon {
+	width: 35px;
+	height: 35px;
+	padding: 5px;
+	position: absolute;
+	bottom: 1px;
+	left: 5px;
+	opacity: 0.7;
+  }
+
+  @media (min-width: 950px) {
+/*-----------------------------------------------------------------Основні стилі----------------------------------------------------------*/
+html,body{
+	padding: 20px;
+	background-color: rgb(180, 207, 207);
+	margin: 0 auto;
+}
+
+.wrapper{
+	max-width: 1100px;
+	padding: 0px 20px;
+	margin: 0 auto;
+}
+.page{
+	display: flex;
+}
 
 
-display: block;
-max-width: 1040px;
+/*------------------------------------------------------------------ Великий слайдер-------------------------------------------------- */
+.sliderbig{
+	width: 500px;
+	height: 380px;	
+}
 
-margin: 40px 20px;
-padding: 60px;
+/* Слайд */
+.sliderbig__item img{
+	width: 460px;
+	height: 350px;
+	border-radius: 10px;
+}
 
-font-family:'Courier New', Courier, monospace;
-border-radius:40px;
-background-color: #fac577;
-box-shadow: 6px 6px 6px rgb(17, 17, 17);}
+/*------------------------------------------------------------------ Превʼю слайдер-------------------------------------------------- */
 
-/*-----------------------------------------------title (1 back)----------------------------------------------*/ 
+.slider{
+	width: 500px;
+	margin-bottom: 20px;
+}
 
-.breakfast-title{background-color: #8ff5fa;}
+/* Слайд */
+.slider__item img{
+	width: 150px;
+	height: 120px;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 5px;
+}
+/* Стрілки слайдера*/
+.slider .slick-arrow{
+	margin: -30px 0px 0px 0px;
+	font-size: 0;
+	width: 20px;
+	height: 40px;
+}
 
-.title-link {background-color: #f3badb;}
+/* Крапки */
 
-.desserts-title{background-color: #f3d036;}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 5px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
 
-.maindishes-title{background-color: #eece01;}
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
 
+/*------------------------------------------------------------------- Текст-контент-------------------------------------------------- */
+.page__bread-crumbs {
+	font-size: 14px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+.page__name-of-dish {
+	font-size: 75px;
+	line-height: 60px;
+	padding: 40px 0px 0px 0px;
+}
+ .content {
+	padding: 20px 40px;
+	font-size: 18px;
+	line-height: 30px;
+	max-width: 600px;
+ }
+ .content__checkbox {
+	padding: 20px 0px;
+	font-size: 18px;
+}
+.icon{
+	height: 15px;
+	padding-right: 10px;
+	line-height: 10px;
+}
 
-/*-----------------------------------------------button-block (2 block)----------------------------------------------*/ 
-.buttons,
-.buttons-appetizer,
-.buttons-breakfast,
-.buttons-desserts,
-.buttons-maindishes{
+.step{
+	font-size: 35px;
+	color: #ffffffa1;
+	padding-left: 0px;
+}
 
-display: block;
-max-width: 1040px;
-height:1400px ;
-padding: 150px 20px;
-margin: 20px;
+.content__text {
+	margin-bottom: 20px;
+}
+.tooltip {
+	display: inline-block;
+  }
+  
+  /* Текст підказки */
+  .tooltip .tooltiptext {
+	width: 150px;
+	font-size: 11px;
+	line-height: 15px;
+	padding: 5px;
+	border-radius: 6px;
+	right: 10px;
+	bottom:30px;
+	text-align: center;
+	visibility: hidden;
+	position: absolute;
+	color: #0d0c0c;
+	background-color: rgb(255, 255, 255);
+	z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
 
+  .tooltipicon {
+	width: 35px;
+	height: 35px;
+	padding: 5px;
+	position: absolute;
+	bottom: 1px;
+	left: 5px;
+	opacity: 0.7;
+  }
 
-box-shadow: 6px 6px 6px rgb(17, 17, 17);
-border-radius:40px;
-background-image: url(../img/vegan.jpg);}
-
-/*-----------------------------------------------button (back)----------------------------------------------*/
-
-
-.buttons-appetizer{background-image: url(../img/appetizer.jpg);}
-
-.buttons-breakfast {background-image: url(../img/breakfast.jpg);}
-
-.buttons-desserts{background-image: url(../img/desserts.jpg);}
-
-.buttons-maindishes {background-image: url(../img/maindishes.jpg);}
-
-
-
-/*-----------------------------------------------button link----------------------------------------------*/
-.button__link{ 
-display: inline-block;
-padding: 45px 20px;
-margin: 25px;
-text-align: center;
-height:190px ;
-width: 900px;
-font-size: 70px;
-
-
-background: rgb(18, 112, 112);  
-color: azure;
-border-radius: 45px;
-box-shadow: 6px 6px 6px rgb(17, 17, 17);}
-
-
-
-.button__link:hover
-{ background: rgb(171, 175, 175);}
-
+  }
