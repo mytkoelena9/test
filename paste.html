@@ -6,39 +6,88 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/stylecontent.css">
-	<title>Document</title>
+	<title>Паштет з квасолі</title>
 </head>
-<h1 class="title-link"><a href="index.html" >головна></a></h1>
-
-    <h1 class="title-link"><a href="appetizer.html" >холодні закуски </a></h1>
-    
-</header>
-<main>
-	<div class="content">
-		<h2 class="title"> паштет з чорносливом</h2>
-		<img src="img/paste.jpg" alt="паштет з квасолі з розносливом ">
-        
-<div class="container-text">
-	
-        <p class="text">   
-			Відварену квасолю перебити в блендері
-			 з чорносливом та обсмаженим на сковороді, 
-			 волоським горіхом.
-			Додати спеції за смаком.
-        </p>
-
-
-
-		<div class="ingredients">
-            <ul>
-               <li >квасоля (100г.)</li>
-        <li >чорнослив (100г.)</li>
-        <li >волоський горіх (5шт.)</li>
-        <li >рослинне масло (2ст.л.)</li>
+<body>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">Паштет з квасолі</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="index.html">головна сторінка></a>
+          <a href="appetizer.html">закуски</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img  src="img/paste.jpeg"alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/Beans.jpeg" alt="" >
+            </div>
+            <div class="sliderbig__item filter">
+              <img src="img/chornoslyvu-1.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="img/walnut.png" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="img/olive.png" alt="">
+            </div>
         </div>
-	</div>
-</div>
-   
-    </main>
-    <footer></footer>
-</body>
+
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/paste.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/Beans.jpeg" alt="">
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/chornoslyvu-1.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image"  src="img/walnut.png" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image"  src="img/olive.png" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+          <li><img class="icon" src="img/checkbox.svg" alt="">квасоля (100 г.)</li>   
+          <li><img class="icon" src="img/checkbox.svg" alt="">чорнослив (100 г.)</li>
+          <li><img class="icon" src="img/checkbox.svg" alt="">волоський горіх (5 шт.)</li>
+          <li><img class="icon" src="img/checkbox.svg" alt="">рослинна олія (2 ст. л.)</li>
+        </ul>
+
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Попередньо відварити квасолю (можна використовувати консервовану). 
+            Відвар квасолі не виливати одразу, ним можна регулуювати консистенцію паштету.
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            Квасолю помістити в блендер, додати чорнослив, олію та перебити. 
+            Також саме час регулювати консистенцію відваром квасолі, якщо є бажання зробити його більш рідким.  
+          </p>
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            Ядра волоських трохі подрібнити та змішати з паштетом. 
+          </p>
+          <h3 class="step">Крок #4</h3>
+          <p class="content__text">
+            Змішати в мисці горохово-картопляне пюре з овочевою піджаркою, додати спеції  та кінзу за смаком.
+          </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="js/script.js"></script>
+		</div>
+	</body>
+</html>
