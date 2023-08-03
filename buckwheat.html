@@ -6,45 +6,93 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/stylecontent.css">
-	<title>Document</title>
+	<title>Жива крем-каша</title>
 </head>
 
-
-<body>
-    <header>
-		<h1 class="title-link"><a href="index.html" >головна</a></h1>
-
-    <h1 class="title-link"><a href="breakfast.html" >сніданки</a></h1>
-	 
-    
-</header>
-<main>
-	
-	<div class="content">
-		<h2 class="title">жива крем-каша</h2>
-		<img src="img/buckwheat.jpg" alt="жива крем-каша">
-        
-<div class="container-text">
-    
-        <p class="text">   
-			Замочену з ночі, зелену гречку перебити в блендері з молоком та бананом. 
-			Додати за смаком ягоди, горіхи, або ж сухофрукти.
-
-        </p>
-
-
-
-		<div class="ingredients">
-            <ul>
-					<li >зелена гречка (50г.)</li>
-					<li >рослинне молоко (1скл.)</li>
-					<li >банан (1шт.)</li>
-					<li >горіхи та ягоди</li>
-					</ul>
+	<body>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">Жива крем-каша</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="html/index.html">головна сторінка></a>
+          <a href="breakfast.html">сніданки</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img  src="img/bowl.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/buckwheat.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item filter">
+              <img src="img/milk.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/banana.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/walnut.png"alt="">
+            </div>
         </div>
-	</div>
-</div>
-   
-    </main>
-    <footer></footer>
-</body>
+
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image"  src="img/bowl.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/buckwheat.jpeg" alt="">
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/milk.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/banana.jpeg"alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/walnut.png" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+            <li>
+              <img class="icon" src="img/checkbox.svg" alt="">
+              зелена гречка (70 г.)</li>
+              <li>
+                <li>
+                  <img class="icon" src="img/checkbox.svg" alt="">
+                  вівсяне молоко (100 мл.)</li>
+                <img class="icon" src="img/checkbox.svg" alt="">
+                  банан (150 г.)
+              </li>
+            <li>
+              <img class="icon" src="img/checkbox.svg" alt="">
+              горіхи або ягоди
+            </li> 
+        </ul>
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+              Замочити зелену гречку в кип’яченій або фільтрованій воді, так щоб рівень води був на пару сантиметрів вище гречки.
+              Замочувати мінімум на три години.  
+          </p>
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            Ретельно промити гречку, додати банан, молоко та перебити в блендері.
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            За бажанням можна додати будь-які горіхи, ягоди чи арахісову пасту.
+          </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="js/script.js"></script>
+		</div>
+	</body>
+</html>
