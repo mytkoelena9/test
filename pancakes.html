@@ -9,32 +9,78 @@
 	<title>Document</title>
 </head>
 <body>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">Бананові оладки</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="index.html">головна сторінка></a>
+          <a href="breakfast.html">сніданки</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img  src="img/pancake.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/oat_flakes.jpeg" alt="" >
+            </div>
+            <div class="sliderbig__item filter" alt="">
+              <img src="img/banana.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="img/milk.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="img/soda.jpeg" alt="">
+            </div>
+        </div>
 
-	<header>
-		<h1 class="title-link"><a href="index.html" >головна></a></h1>
-		<h1 class="title-link"><a href="breakfast.html" >сніданки</a></h1>
-	</header>
-
-<main>
-	<div class="content">
-			<h2 class="title">бананові оладки</h2>
-			<img src="img/pancakes.jpg" alt=" банановіоладки">
-	
-		<div class="container-text">
-			<p class="text">   
-			Перебити в блендері банан з молоком, додати муку та розпушувач. 
-			Обсмажити з двох сторін. Подавати з сиропом або йогуртом та ягодами.
-			</p>
-
-			<div class="ingredients">
-				<ul>
-					<li >банан (2шт.)</li>
-					<li >вівсяна мука(2-3 ст.л.)</li>
-					<li >рослинне молоко(0.5скл.)</li>
-					<li >розпушувач (1ч.л.)</li>
-				</ul>
-			</div>
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image"  src="img/pancake.jpeg"alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/oat_flakes.jpeg" alt="">
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/banana.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/milk.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image"  src="img/soda.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+            <li><img class="icon" src="img/checkbox.svg" alt="">вівсяні пластівці (70 г.)</li>
+            <li><img class="icon" src="img/checkbox.svg" alt="">рослинне молоко або газована вода (100 мл.)</li>
+            <li><img class="icon" src="img/checkbox.svg" alt="">банан (1 шт.)</li>   
+            <li><img class="icon" src="img/checkbox.svg" alt="">розпушувач (1 ч. л.)</li>
+          </ul>
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Перемолоти вівсяні пластівці в муку. Можна використовувати вже готове вівсяне борошно.
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+			В блендері перебити банан з молоком. Додати муку, розпушувач та ретельно перемішати.    
+          </p>
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+			Обсмажити по 2-3 хвилини з кожної сторони до рум'яної скоринки.
+          </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="js/script.js"></script>
 		</div>
-	</div>
-</main>
-</body>
+	</body>
+</html>
