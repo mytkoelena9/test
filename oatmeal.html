@@ -9,39 +9,84 @@
 	<title>Document</title>
 </head>
 <body>
-    <header>
-		<h1 class="title-link"><a href="index.html" >головна></a></h1>
-
-    <h1 class="title-link"><a href="breakfast.html" >сніданки</a></h1>
-	 
-    
-</header>
-<main>
-	<div class="content">
-		<h2 class="title">вівсяномлинець</h2>
-		<img src="img/oatmeal.jpg" alt="вівсяномлинець">
-        
-<div class="container-text">
-    
-        <p class="text">   
-			Інгредієнти змішати, залити водою та залишити на 30 хвилин.
-			Викласти тісто на суху холодну сковорідку обсмажити з двох сторін.
-			
-        </p>
-
-
-
-		<div class="ingredients">
-            <ul>
-			<li >банан (1шт.)</li>
-        <li >вівсяна пластівці (1скл.)</li>
-        <li >вода (250 мл.)</li>
-        <li >лляне борошно (1ст.л.)</li>
-					</ul>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">Вівсяно-млинець</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="index.html">головна сторінка></a>
+          <a href="breakfast.html">сніданки</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img  src="img/recept-49211-620x413.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/oat_flakes.jpeg" alt="" >
+            </div>
+            <div class="sliderbig__item filter" alt="">
+              <img src="img/lon.png" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="img/banana.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="img/woter.jpeg" alt="">
+            </div>
         </div>
-	</div>
-</div>
-   
-    </main>
-    <footer></footer>
-</body>
+
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image"  src="img/recept-49211-620x413.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/oat_flakes.jpeg"alt="">
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/lon.png" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/banana.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image"  src="img/woter.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+          <li><img class="icon" src="img/checkbox.svg" alt="">вівсяна пластівці (30 г.)</li>  
+          <li><img class="icon" src="img/checkbox.svg" alt="">льон (30 г.)</li>
+          <li><img class="icon" src="img/checkbox.svg" alt="">банан (1 шт.)</li> 
+          <li><img class="icon" src="img/checkbox.svg" alt="">вода (200 мл.)</li>
+        </ul>
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Вівсяні пластівці та льон подрібнити в блендері в муку.
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            Отриману суміш залити водою та добре перемішати, щоб не було грудочок. 
+            Залишити на 5 хвилин.     
+          </p>
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            Тісто рівномірно викласти на суху холодну сковорідку.
+             Обсмажити по 2-3 хвилини з кожної сторони.
+          </p>
+          <h3 class="step">Крок #4</h3>
+          <p class="content__text">
+            Банан порізати та покласти всередину млинця.
+          </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="js/script.js"></script>
+		</div>
+	</body>
+</html>
