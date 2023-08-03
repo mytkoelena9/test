@@ -10,38 +10,97 @@
 </head>
 
 <body>
-    <header>
-		<h1 class="title-link"><a href="index.html" >головна</a></h1>
-
-    <h1 class="title-link"><a href="appetizer.html" >холодні закуски </a></h1>
-    
-</header>
-<main>
-	<div class="content">
-        <h2 class="title">чорна ікра з чіа</h2>
-		<img src="img/chia.jpg" alt="чорна ікра з ЧІА">
-        
-<div class="container-text">
-
-        <p class="text">   
-            Листи норі перемолоти, змішати з соусом та рослинним маслом. 
-            Залити зерна та залишити на пів години. 
-            Чудово смакує з грінками з темного хліба змащених авокадо.
-        </p>
-
-
-
-		<div class="ingredients">
-            <ul>
-                <li >насіння ЧІА (3ст. л.)</li>
-                <li >лист норі (2 шт.)</li>
-                <li >соєвий соус (3ст. л.)</li>
-                <li >лляне масло (2ст. л.)</li>
-            </ul>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">ЧІА-ікра</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="html/index.html">головна сторінка></a>
+          <a href="html/appetizer.html">закуски</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img  src="img/chia.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/chia2.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item filter">
+              <img src="img/nori.jpeg"alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/soy_sauce.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/lnyanym-maslom-32843800800261.jpeg" alt="">
+            </div>
         </div>
-	</div>
-</div>
-   
-    </main>
-    <footer></footer>
-</body>
+
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image"  src="img/chia.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/chia2.jpeg" alt="">
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/nori.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/soy_sauce.jpeg"alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="/img/lnyanym-maslom-32843800800261.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+            <li>
+              <img class="icon" src="img/checkbox.svg" alt="">
+              насіння ЧІА (3 ст. л.)
+            </li>
+            <li>
+              <img class="icon" src="img/checkbox.svg" alt="">
+              листки норі (½ листа )</li>
+            <li>
+              <img class="icon" src="img/checkbox.svg" alt="">
+              соєвий соус (1 ст. л.)
+            </li> 
+            <li>
+              <img class="icon" src="img/checkbox.svg" alt="">лляна олія (1 ч. л.)
+                <div class="tooltip">
+                  <img class="tooltipicon" src="img/icons/1545205.png" alt="">
+                    <span class="tooltiptext">
+                      Можна використовувати будь-яку рослинну олію на ваш смак.
+                    </span>
+              </div>
+            </li>
+           
+            
+        </ul>
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Змішати соєвий соус з олією та додати  пів склянки води.  
+          </p>
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            Листи норі перебити в блендері чи кавомолці та змішати з насінням. 
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            Змішати разом всі інгедієнти та прибрати в холодильник на 20 хвилин. 
+            Ікра чудово смакує з грінками з темного хліба змащених авокадо.  
+          </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="js/script.js"></script>
+		</div>
+	</body>
+</html>
