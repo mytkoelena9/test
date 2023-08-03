@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>записник рецептів</title>
 </head>
+<body>
+    <header>
+        <div class="panel panel--vegan">
+            <h1 class="top-title">Записник рецептів.</h1> 
+            <h2 class="bottom-title">швидкі страви, що складаються з 4 інгредієнтів.</h2>
+        </div>
+   </header>
 
+    <main class="page page--vegan">
+        <div class="block">
+            <div class="block__continer continer continer--vegan"> 
+                <li><a href="../recept/breakfast.html"><button class="continer__button">снiданки</button></a></li>
+                <li><a href="../recept/appetizer.html"><button class="continer__button">закуски</button></a></li>
+                <li><a href="../recept/maindishes.html"><button class="continer__button">основнi страви</button></a></li>
+                <li><a href="../recept/desserts.html"><button class="continer__button">десерти</button></a></li>
+            </div>
+        </div>
+    </main>
+  
+    <script>
+  
+        const bottomTitle = document.querySelector('.bottom-title');
+    
+        setTimeout(() => {
+          bottomTitle.classList.add('appear');
+        }, 1000); 
+    </script>
 
-<body> 
-
-<header>
-	<div class="title">
-		<h1>Записник рецептів</h1>
-		<h2>збірка рослинних страв, що складаються лише з 4 інгредієнтів</h2>
-	</div>
-</header>
-
-<main>
-	
-	<div class="buttons">
-	<ol>
-		<li><a href="breakfast.html" class="button__link">сніданки </a> </li>
-		<li><a href="appetizer.html" class="button__link">закуски </a> </li>
-		<li><a href="maindishes.html" class="button__link">основні страви</a></li>
-		<li><a href="desserts.html" class="button__link">десерти</a></li>
-	
-	</ol>
-	</div>
-</main>   
 </body>
-
 </html>
-
