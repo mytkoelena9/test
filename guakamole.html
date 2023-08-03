@@ -6,42 +6,83 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/stylecontent.css">
-	<title>Document</title>
+	<title>Гуакамоле</title>
 </head>
 
 <body>
-    <header>
-		<h1 class="title-link"><a href="index.html" >головна></a></h1>
-
-    <h1 class="title-link"><a href="appetizer.html" >холодні закуски </a></h1>
-  
-</header>
-<main>
-	
-	<div class="content">
-		<h2 class="title">гуакамоле</h2>
-		<img src="img/guakamole.jpg" alt="чорна ікра з ЧІА">
-        
-<div class="container-text">
-        <p class="text">   
-			Авокадо можна пом’яти виделкою, 
-			перебити в блендері або дрібно нарізати.
-			Додати сік лайма, та подрібнений перець чилі.
-			Можна подавати з начос, тако чи лавашом.
-        </p>
-
-
-
-		<div class="ingredients">
-            <ul>
-					<li>авокадо (1шт.)</li>
-					<li>чилі перець (1шт.)</li>
-					<li>рослинне масло (1ст.л.)</li>
-					<li>сік ½ лимона (лайма)</li>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">Гуакамоле</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="index.html">головна сторінка></a>
+          <a href="appetizer.html">закуски</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img  src="img/guakamole.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/avocado.jpeg" alt="" >
+            </div>
+            <div class="sliderbig__item filter" alt="">
+              <img src="img/chili.jpeg">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/olive.png" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/laym.jpeg" alt="">
+            </div>
         </div>
-	</div>
-</div>
-   
-    </main>
-    <footer></footer>
-</body>
+
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image"  src="img/guakamole.jpeg">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/avocado.jpeg" >
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/chili.jpeg">
+            </div>
+            <div class="slider__item">
+              <img src="img/laym.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/olive.png" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+          <li><img class="icon" src="img/checkbox.svg" alt="">авокадо (1 шт.)</li>
+          <li><img class="icon" src="img/checkbox.svg" alt="">чілі </li> 
+          <li><img class="icon" src="img/checkbox.svg" alt="">сік лайма чи лимону (½)</li>
+          <li><img class="icon" src="img/checkbox.svg" alt="">оливкова олія (1 ст. л.)</li>
+            
+        </ul>
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Авокадо можна пом’яти виделкою, перебити в блендері чи просто дрібно нарізати.
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            Додати до авокадо сік лайма, олію та змішати. Кислота від цитрусових не дасть авокадо потемнішати. 
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            Перець нарізати маленькими шматочками і теж додати до авокадо. 
+            Кількість чилі регулюйте, виходячи зі своїх смакових вподобань.
+          </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="js/script.js"></script>
+		</div>
+	</body>
+</html>
