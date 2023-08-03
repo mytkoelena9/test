@@ -6,51 +6,90 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/stylecontent.css">
-	<title>Document</title>
+	<title>Домашня гранола</title>
 </head>
 
 <body>
-    <header class="navi">
-		
-    <h1 class="title-link"><a href="index.html" >головна</a></h1>
-	 <h1 class="title-link"><a href="breakfast.html" >сніданки</a></h1>
-   
-</header>
-<main>
-	
-	<div class="content">
-		<h2 class="title">домашня гранола</h2>
-		<img src="img/granola.jpg" alt="домашня гранола">
-        
-<div class="container-text">
-    
-	<p class="text">   
-		Вівсяні пластівці змішати з сиропом,
-		додати кокосове масло, горіхи та ягоди.
-		Запікати в духовці 30 хвилин при 150 °С.
-	  </p>
-	<div class="ingredients">
-		<ul>
-			<li >вівсяні пластівці (300г.)</li>
-			<li >сироп агави або клиновий (100г.)</li>
-			<li >кокосове масло (50г.)</li>
-			<li >горіхи (150г.)</li>
-			</ul>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">Домашня гранола</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="index.html">головна сторінка></a>
+          <a href="breakfast.html">сніданки</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img  src="img/granola.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/oat_flakes.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item filter">
+              <img src="img/coconut_oil.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/agava.png" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="img/walnut.png"alt="">
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image"  src="img/granola.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/oat_flakes.jpeg" alt="">
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/coconut_oil.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="img/agava.png"alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/walnut.png"alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+          <li><img class="icon" src="img/checkbox.svg" alt="">вівсяні пластівці (300 г.)</li> 
+          <li><img class="icon" src="img/checkbox.svg" alt="">кокосове масло (50 г.)</li> 
+          <li>
+            <img class="icon" src="img/checkbox.svg" alt="">сироп агави (2 ст. л.)
+              <div class="tooltip">
+                <img class="tooltipicon" src="img/icons/1545205.png" alt="">
+                  <span class="tooltiptext">
+                    Можна використовувати будь який підсолоджувач за вашим смаком
+                  </span>
+            </div>
+          </li>  
+          <li><img class="icon" src="img/checkbox.svg" alt="">горіхи (150 г.)</li>
+        </ul>
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Духовку розігріти до 160 градусів в режимі «конвекція», а якщо такого немає, 
+            то в режимі верхнього та нижнього нагріву.
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            Змішати у мисці всі інгредієнти та змазати їх кокосовим маслом.
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            Розподілити гранолу рівномірним тонким шаром по всьому листу та поставити у духовку на 30 хвилин.
+          </p>
+    </div> 
   </div>
-
-
-
-
-       
-
-
-
-		
-	</div>
-</div>
-   
-    </main>
-    <footer>
-
-	 </footer>
-</body>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="js/script.js"></script>
+		</div>
+	</body>
+</html>
