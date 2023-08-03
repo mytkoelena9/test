@@ -10,39 +10,79 @@
 </head>
 
 <body>
-    <header>
-		<h1 class="title-link"><a href="index.html" >головна</a></h1>
-
-    <h1 class="title-link"><a href="appetizer.html" >холодні закуски </a></h1>
-    
-</header>
-<main>
-	<div class="content">
-		<h2 class="title">шпротник</h2>
-		<img src="img/sprotnik.jpg" alt="паштет з тофу та норі">
-        
-<div class="container-text">
-
-        <p class="text">   
-			Перебити в блендері всі інгредієнти
-			 та залишити в холодильнику на 30-60 хвилин. 
-			Подавати з грінками з білої чіабати.
-        </p>
-
-
-
-		<div class="ingredients">
-            <ul>
-					<li >тофу копчений</li>
-					
-					<li >копчена паприка</li>
-					<li >рослинне масло</li>
-					<li >норі</li>
-					</ul>
+    <div class="wrapper">
+      <h2 class="page__name-of-dish">Шпротник</h2>
+		    <div class="page">
+			<!-- Контент -->
+      <div class="sliderbox">
+        <div class="page__bread-crumbs">
+          <a href="../html/index.html">головна сторінка></a>
+          <a href="../html/appetizer.html">закуски</a>
+      </div> 
+        <div class="sliderbig">
+            <div class="sliderbig__item filter">
+              <img  src="../img/sprotnik.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img src="../img/tofy-scaled.jpeg" alt="" >
+            </div>
+            <div class="sliderbig__item filter">
+              <img src="../img/olive.png" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="../img/nori.jpeg" alt="">
+            </div>
+            <div class="sliderbig__item">
+              <img  src="../img/chilli.jpeg" alt="">
+            </div>
         </div>
-	</div>
-</div>
-   
-    </main>
-    <footer></footer>
+
+        <div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image" src="../img/sprotnik.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image" src="../img/tofy-scaled.jpeg" alt="">
+            </div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="../img/olive.png" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image"  src="../img/nori.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+              <img class="preview-image"  src="../img/chilli.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+          <li><img class="icon" src="../img/checkbox.svg" alt="">тофу копчений (200 г.)</li>   
+          <li><img class="icon" src="../img/checkbox.svg" alt="">листки норі (2 шт.)</li>
+          <li><img class="icon" src="../img/checkbox.svg" alt="">копчена паприка</li>
+          <li><img class="icon" src="../img/checkbox.svg" alt="">рослинна олія (2 ст. л.)</li>
+        </ul>
+
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Листи норі перебити в блендері чи кавомолці та змішати з паприкою.
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            Помістити тофу в блендер, додавши попередньо змішані інгредієнти, олію та добре перебити.
+          </p>
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            Залишити в холодильнику на 30 хвилин.
+          </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="../js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="../js/script.js"></script>
+		</div>
+	</body>
 </body>
