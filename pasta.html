@@ -8,36 +8,73 @@
 	<link rel="stylesheet" href="css/stylecontent.css">
 	<title>Document</title>
 </head>
-<h1 class="title-link"><a href="index.html" >головна></a></h1>
-
-    <h1 class="title-link"><a href="maindishes.html" >основні страви </a></h1>
-    
-</header>
-<main>
-	<div class="content">
-		<h2 class="title"> паста з брокколі та шпинатом</h2>
-		<img src="img/pasta.jpg" alt="паста з брокколі та шпинатом">
-		
-<div class="container-text">
-
-        <p class="text">  
-			Попередньо ошпарену кропом брокколі, тушити 20 хвилин в молоці з шпинатом.
-			Додати пасту та довести до готовності на маленькому вогні. 
-		
-        </p>
-
-
-
-		<div class="ingredients">
-            <ul>
-					<li >паста</li>
-					<li >шпинат </li>
-					<li >броколі</li>
-					<li >рослинне молоко</li>
+<body>
+	<div class="wrapper">
+		<h2 class="page__name-of-dish">Паста з броколі</h2>
+		    <div class="page">
+			<!-- Контент -->
+			    <div class="sliderbox">
+				    <div class="page__bread-crumbs">
+					    <a href="index.html">головна сторінка></a>
+					    <a href="maindishes.html">основні страви</a>
+				    </div>
+		    <div class="sliderbig">
+			    <div class="sliderbig__item filter">
+				    <img  src="img/pasta.jpeg"alt=""></div>
+			    <div class="sliderbig__item">
+				    <img src="img/spinach.jpeg" alt=""></div>
+			    <div class="sliderbig__item filter" alt="">
+				    <img src="img/panne.png" alt=""> </div>
+			    <div class="sliderbig__item">
+				    <img src="img/milk.jpeg" alt=""></div>
+			    <div class="sliderbig__item">
+				    <img src="img/broccoli.png" alt=""></div>
+		    </div>
+	<div class="slider">
+            <div class="slider__item filter">
+              <img class="preview-image"  src="img/pasta.jpeg" alt=""></div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/milk.jpeg" alt=""></div>
+            <div class="slider__item filter">
+              <img class="preview-image" src="img/panne.png"alt=""></div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/spinach.jpeg"alt=""></div>
+            <div class="slider__item">
+              <img class="preview-image" src="img/broccoli.png" alt=""></div>
         </div>
-	</div>
-</div>
-   
-    </main>
-    <footer></footer>
-</body>
+    </div>
+      <div class="content">
+        <ul class="content__checkbox">
+          <li><img class="icon" src="img/checkbox.svg" alt="">рослинне молоко (1 скл.)</li>
+          <li><img class="icon" src="img/checkbox.svg" alt="">паста (200 г.)</li>   
+          <li><img class="icon" src="img/checkbox.svg" alt="">шпинат (200 г.)</li>
+          <li><img class="icon" src="img/checkbox.svg" alt="">броколі (400 г.)</li>
+        </ul>
+        <h3 class="step">Крок #1</h3>
+          <p class="content__text">
+            Покласти брокколі в глибоку каструлю. Налити води так, щоб вона покривала капусту.
+            Варити на середньому вогні.
+        <h3 class="step">Крок #2</h3>
+          <p class="content__text">
+            Дістати капусту з бульйону та висипати пасту в бульйон. Періодично помішувати ложкою, для того щоб макаронни не злиплися. 
+          </p>
+          </p>
+        <h3 class="step">Крок #3</h3>
+          <p class="content__text">
+            На розігріту сковорідку, вилити молоко, дадати шпинат та брокколі. Тушкувати 5 хвилин на середньму вогні.
+          </p>
+          <h3 class="step">Крок #4</h3>
+          <p class="content__text">
+          Додати макарони на сковорідку разом зі склянкою бульйону, перемішати з всіма інгредієнтами та тушкувати до готовності.
+            </p>
+    </div> 
+  </div>
+			<!--jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!--слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!--файл скриптів -->
+			<script src="js/script.js"></script>
+		</div>
+	</body>
+</html>
