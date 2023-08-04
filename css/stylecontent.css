@@ -320,7 +320,7 @@ a:hover {
 	margin-bottom: 20px;
 }
 .tooltip {
-	display: inline-block;
+	display: none;
   }
   
   /* Текст підказки */
