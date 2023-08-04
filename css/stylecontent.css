@@ -308,18 +308,12 @@ html,body{
 }
 
 /*------------------------------------------------------------------- Текст-контент-------------------------------------------------- */
-.turning {
-	height: 15px;
-	padding-right: 10px;
-	line-height: 10px;
-}
 	  
 	  
 .page__bread-crumbs {
 	font-size: 14px;
-	padding-left: 20px;
-	padding-bottom: 10px;
-	display:none;
+	padding: 20px;
+	
 }
 .page__name-of-dish {
 	font-size: 75px;
