@@ -197,43 +197,9 @@ a:hover {
 	padding-left: 10px;
 	margin-bottom:30px;
 }
-.tooltip {
-	position: relative;
-	display: none;
-	cursor: help;
-  }
-  
-  /* Текст підказки */
-  .tooltip .tooltiptext {
-	width: 150px;
-	font-size: 11px;
-	line-height: 15px;
-	padding: 5px;
-	border-radius: 6px;
-	right: 10px;
-	bottom:30px;
-	text-align: center;
-	visibility: hidden;
-	position: absolute;
-	color: #0d0c0c;
-	background-color: rgb(255, 255, 255);
-	z-index: 1;
-  }
-  
-  .tooltip:hover .tooltiptext {
-	visibility: visible;
-  }
 
-  .tooltipicon {
-	width: 35px;
-	height: 35px;
-	padding: 5px;
-	position: absolute;
-	bottom: 1px;
-	left: 5px;
-	opacity: 0.7;
-  }
-
+  
+ 
   @media (min-width: 950px) {
 /*-----------------------------------------------------------------Основні стилі----------------------------------------------------------*/
 html,body{
@@ -254,10 +220,13 @@ html,body{
 
 /*------------------------------------------------------------------ Великий слайдер-------------------------------------------------- */
 
-
-	  .sliderbig{
+.sliderbig{
 	width: 500px;
 	height: 380px;	
+}
+
+.sliderbig__item {
+	height: 350px;
 }
 
 /* Слайд */
@@ -340,7 +309,6 @@ html,body{
 
 .step{
 	font-size: 35px;
-	color: #ffffffa1;
 	padding-left: 0px;
 }
 
