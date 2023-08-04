@@ -152,10 +152,6 @@ html,body{
 	color: #f9f4f48b;
 }
 
-a:hover {
-	color: rgba(236, 245, 241, 0.745);
-	transition: 0.6s;
-}
 .page__name-of-dish {
 	font-family: "CircularStd";
 	font-size: 55px;
@@ -284,7 +280,11 @@ html,body{
 .page__bread-crumbs {
 	font-size: 14px;
 	padding: 20px;
-	
+}
+
+a:hover {
+	color: rgba(236, 245, 241, 0.745);
+	transition: 0.6s;
 }
 .page__name-of-dish {
 	font-size: 75px;
