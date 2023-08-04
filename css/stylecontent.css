@@ -150,7 +150,6 @@ html,body{
 	font-size: 12px;
 	padding-bottom: 10px;
 	color: #f9f4f48b;
-	display:none;
 }
 
 a:hover {
@@ -313,6 +312,7 @@ html,body{
 	font-size: 14px;
 	padding-left: 20px;
 	padding-bottom: 10px;
+	display:none;
 }
 .page__name-of-dish {
 	font-size: 75px;
