@@ -220,7 +220,7 @@ html,body{
 	width: 500px;
 	height: 380px;	
 }
-
+.sliderbig__item { height: 350px;}
 .sliderbig__item {
 	height: 350px;
 }
