@@ -21,7 +21,7 @@ $(document).ready(function(){
   		slidesToScroll: 1,
   		arrows: false,
  		fade: true,
-  		asNavFor: '.slider-nav',
+  		asNavFor: '.slider',
 		speed:700,
 		autoplaySpeed:800,
 		isFinite:true,
