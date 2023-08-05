@@ -8,7 +8,7 @@ $(document).ready(function(){
 		autoplaySpeed:800,
 		isFinite:true,
 		swipe: true,
-		asNavFor:".sliderbig",
+		asNavFor:'.sliderbig',
 		waitForAnimate:false,
 		centerMode: true,
 		focusOnSelect: true
