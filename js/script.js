@@ -6,6 +6,7 @@ $(document).ready(function(){
 		speed:700,
 		autoplaySpeed:800,
 		isFinite:true,
+		centerSliders:true,
 		swipe: true,
 		asNavFor:".sliderbig",
 		waitForAnimate:false,
