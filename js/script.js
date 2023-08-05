@@ -11,7 +11,7 @@ $(document).ready(function(){
 		asNavFor:'.sliderbig',
 		waitForAnimate:false,
 		centerMode: true,
-		focusOnSelect: true
+		focusOnSelect: true,
 	});
 
 	
